@@ -68,6 +68,9 @@ picking a tag.
     allocated, run `docker exec -it ollama ollama ps` once a model is loaded
     and read the `CONTEXT` column.
 
+    [How to configure Ollama with environment variables](howto-ollama-env-vars.md)
+    covers these settings in full, including the other ways to run Ollama.
+
 1. Start the container from that directory.
 
     ```sh
