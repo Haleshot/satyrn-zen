@@ -20,7 +20,7 @@ involved in grading.
 
 [Your first run](https://pauleveritt.github.io/satyrn-evals/user-journey/)
 walks the whole journey on Ollama, from install to a graded result. It runs on
-a laptop with 16GB of RAM, and a GPU is not required.
+a laptop with 16GB of memory.
 
 If Ollama is not set up yet, start with
 [Run your first small language model locally using Ollama](howto-ollama.md).
