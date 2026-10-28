@@ -23,7 +23,7 @@
 
 ## Gallery of Interesting Notebooks
 
-The early days, this wiki page on GitHub was incredibly valuable. Curated by the community and the Project,
+The early days, [this wiki page on GitHub](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks) was incredibly valuable. Curated by the community and the Project,
 it shared the variety of domains that Notebooks were useful (sciences, social sciences, and humanities).
 It also shared creative uses of the notebook and its interactive widgets.
 
