@@ -1,0 +1,26 @@
+# Config for lychee, the link checker that .github/workflows/links.yml runs.
+# lychee reads this file from the repo root, so `lychee .` checks the same
+# links locally as CI does.
+#
+# Read more: https://lychee.cli.rs/guides/config/
+
+# Only the files that carry links we write. lychee skips anything in
+# .gitignore, so the build output in site/ and .pixi/ stay out. The templates
+# in overrides/ are left out on purpose: their URLs hold Jinja expressions
+# that only resolve at build time.
+extensions = ["md", "toml"]
+
+# Zensical checks links between our own pages when it builds the site, and
+# `pixi run build` fails on a broken one. lychee only needs to cover
+# the links that leave the site.
+scheme = ["https", "http"]
+
+# The docs point at the local dev server, http://localhost:8001.
+exclude_loopback = true
+
+# A 429 is the host rate limiting the runner. The page itself is fine.
+accept = ["200..=299", "429"]
+
+max_retries = 3
+timeout = 30
+no_progress = true
